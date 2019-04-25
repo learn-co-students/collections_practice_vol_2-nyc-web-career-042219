@@ -57,9 +57,7 @@ end
 def organize_schools (schools)
   new_hash = {}
   schools.values.uniq.each do |element|
-
     new_hash[element[:location]] = (schools.select do |school|
-
         schools[school][:location] == element[:location]
       end).keys
     end
